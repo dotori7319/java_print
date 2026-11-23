@@ -4,13 +4,13 @@
   </head>
   <body>
     <script>
-      var userName = ["Leo", "Antony", "Rahti"];
+      var userName = ["Leo", "Antony", "Rahti","Kang","Lowren"];
       document.write(userName[0]);
       document.write(userName[1]);
       document.write(userName[2]);
       document.write(userName[3]);
       document.write('<br />');
-      for (var i = 0; i < 4; i++) {
+      for (var i = 0; i < userName.length; i=i+2) {
         document.write(userName[i]);
       }
     </script>
