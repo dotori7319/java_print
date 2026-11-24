@@ -10,7 +10,7 @@
       var pos = stringValue.indexOf("n");
 
       while (pos > -1) {
-        positions.push(pos);
+        positions.push(pos); //스택의 동작방식은 push로 넣고 pop으로 꺼낸다. LIFO(라스트 인 퍼스트 아웃)
         pos = stringValue.indexOf("n", pos + 1);
       }
       alert(positions);
