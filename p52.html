@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <script>
+      var person1 = {
+        toLocaleString: function () {
+          return "Martin";
+        },
+        toString: function () {
+          return "Eliot Martin";
+        },
+      };
+
+      var person2 = {
+        toLocaleString: function () {
+          return "Phillipe";
+        },
+        toString: function () {
+          return "Chans Phillipe";
+        },
+      };
+
+      var people = [person1, person2];
+      alert(people); //암묵적 호출
+      alert(people.toString()); //명시적 호출
+      alert(people.toLocaleString());
+    </script>
+  </body>
+</html>
