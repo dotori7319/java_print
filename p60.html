@@ -11,7 +11,7 @@
 
       while (pos > -1) {
         positions.push(pos); //스택의 동작방식은 push로 넣고 pop으로 꺼낸다. LIFO(라스트 인 퍼스트 아웃)
-        pos = stringValue.indexOf("a", pos + 1);
+        pos = stringValue.indexOf("a", pos + 1); //모든 a의 위치 찾기
       }
       alert(positions);
     </script>
