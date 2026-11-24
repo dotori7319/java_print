@@ -2,8 +2,15 @@
   <body>
     <img id="image" src="jackson1.jpg" width="520" height="500" />
     <script>
+      var change = "jackson1.jpg";
       function changeImage() {
-        document.getElementById("image").src = "jackson2.jpg";
+        if ((change === "jackson1.jpg")) {
+          document.getElementById("image").src = "jackson2.jpg";
+          change = "jackson2.jpg";
+        } else {
+          document.getElementById("image").src = "jackson1.jpg";
+          change = "jackson1.jpg";
+        }
       }
     </script>
     <input type="button" onclick="changeImage()" value="click!" />
