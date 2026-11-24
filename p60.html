@@ -7,11 +7,11 @@
     <script>
       var stringValue = "soda, naichaisoda";
       var positions = new Array();
-      var pos = stringValue.indexOf("n");
+      var pos = stringValue.indexOf("a");
 
       while (pos > -1) {
         positions.push(pos); //스택의 동작방식은 push로 넣고 pop으로 꺼낸다. LIFO(라스트 인 퍼스트 아웃)
-        pos = stringValue.indexOf("n", pos + 1);
+        pos = stringValue.indexOf("a", pos + 1);
       }
       alert(positions);
     </script>
