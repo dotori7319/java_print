@@ -12,7 +12,7 @@
         document.getElementById("display").value = expression;
       }
       function compute() {
-        expression = "(" + expression + ")";
+        expression = eval(expression);
         document.getElementById("display").value = eval(expression);
       }
       function clearDisplay() {
@@ -47,7 +47,9 @@
       </div>
       <br />
       <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+      <input type="button" value=" ( " class="btn-solid btn-styled theme-inverse" onclick="add('(')" />
       <input type="button" value=" 0 " class="btn-solid btn-styled theme-secondary" onclick="add('0')" />
+      <input type="button" value=" ) " class="btn-solid btn-styled theme-inverse" onclick="add(')')" />
       <input type="button" value=" + " class="btn-solid btn-styled theme-inverse" onclick="add('+')" />
       </div>
       <br />
